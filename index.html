@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="Heading"><h1>Password Generator</h1></div>
+        <div class="h1"><p>Password Length:</p></div>
+        <div class="h2"><p>Include Uppercase Letters:</p></div>
+        <div class="h3"><p>Include Lowercase Letters:</p></div>
+        <div class="h4"><p>Include Numbers:</p></div>
+        <div class="h5"><p>Include Sybmbols:</p></div>
+        <div class="input1">
+            <select name="Length" id="passwordLength" >
+                  
+                    <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+                    <option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16" selected>16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option>
+                
+                </select>
+
+        </div>
+        
+        <div class="input2">
+            <input type="checkbox" name="upperCase" id="upperCase" checked>
+            <label for="upperCase"> (e.g. ABCDEFG)</label>
+        </div>
+        
+        <div class="input3">
+            <input type="checkbox" name="lowerCase" id="lowerCase" checked>
+            <label for="lowerCase">(e.g. abcdefg)</label>
+        </div>
+        
+        <div class="input4">
+            <input type="checkbox" name="numbers" id="numbers" checked>
+            <label for="numbers">(e.g. 123456789)</label>
+        </div>
+        
+        <div class="input5">
+            <input type="checkbox" name="specialChars" id="specialChars" checked>
+            <label for="specialChars">(e.g. $%@&)</label>
+        </div>
+        
+        <div class="generateBtn"><button id="generate">Generate Password</button></div>
+        <div class="result">
+            <input type="text" id="passwordHolder" value="" placeholder="Your Password Apppear Here" id="password" disabled>
+            <button id="copy" onclick="copyPassword()">Copy</button>
+        </div>
+      </div>
+
+      <script src="./script.js"></script>
+</body>
+</html>

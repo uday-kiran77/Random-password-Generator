@@ -1,0 +1,182 @@
+/* 
+.container{
+height: 200px;
+width: 90vw;
+max-width: 600px;
+background-color: #38A3A5;
+
+}
+#passwordHolder:disabled{
+    width: 90%;
+    margin-left:  5%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 12px 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color:black;
+}
+#copy{
+    position: absolute;
+    margin-left:-80px;
+    margin-top: 5px;
+    height: 25px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+}
+
+
+#generate{
+    margin-left: 5%;
+    width: 90%;
+    padding: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 18px;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+
+   background-color: #57CC99;
+}
+.container {
+    margin: 10px 0;
+    position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 15px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Heading Heading"
+      "h1 input1"
+      "h2 input2"
+      "h3 input3"
+      "h4 input4"
+      "h5 input5"
+      "generateBtn generateBtn"
+      "result result";
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    max-height: 500px;
+}
+  
+  .Heading { grid-area: Heading; text-align: center;text-decoration: underline; }
+  
+  
+  .h1 { grid-area: h1; }
+  
+  .h2 { grid-area: h2; }
+  
+  .h3 { grid-area: h3; }
+  
+  .h4 { grid-area: h4; }
+  
+  .h5 { grid-area: h5; }
+  
+  .input1 { grid-area: input1;  }
+  
+  .input2 { grid-area: input2; }
+  
+  .input3 { grid-area: input3; }
+  
+  .input4 { grid-area: input4; }
+  
+  .input5 { grid-area: input5; }
+  
+  .generateBtn { grid-area: generateBtn; }
+  
+  .result { grid-area: result;  }
+  
+  select{
+      width: 100px;
+      height: 25px;
+      padding: 2px;
+      margin-top:5px;
+      border: 1px solid rgb(15, 4, 4);
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  input[type=checkbox]{
+      width: 15px;
+      height: 15px;
+      margin-top: 4px;
+      cursor: pointer;
+  }
+  .generateBtn button{
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid black;
+      margin-bottom: 5px;
+      font-size: 16px;
+      font-family:  monospace;
+      cursor: pointer;
+
+
+  }
+  .result input{
+      width: 100%;
+      padding: 10px 10px 10px 10px;
+      border-radius: 5px;
+      border: 1px solid black;
+      color: black;
+      background-color: #fff;
+      font-family: 'Open Sans', sans-serif;
+
+  }
+
+  .result input::-moz-selection { /* Code for Firefox */
+    color: white;
+    background-color: #57CC99;
+}
+  
+  .result input::selection {
+    color: white;
+    background-color: #57CC99;
+}
+  .result input::placeholder{
+      color:black;
+      text-align: center;
+  }
+ 
+  .result button{
+      position: absolute;
+      margin-left: -60px;
+      margin-top: 0px;
+      font-size: 15px;
+      padding:9px 12px;
+      border-radius: 0px 5px 5px 0px;
+      border: 1px solid black;
+      display: none;
+      font-family: 'Open Sans', sans-serif;
+      cursor: pointer;
+  }
+
+
+  @media screen and (max-width:768px){
+      .container{
+        max-height: 550px;
+        width: 90%;
+
+      }
+  }
