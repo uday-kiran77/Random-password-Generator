@@ -1,43 +1,4 @@
-/* 
-.container{
-height: 200px;
-width: 90vw;
-max-width: 600px;
-background-color: #38A3A5;
 
-}
-#passwordHolder:disabled{
-    width: 90%;
-    margin-left:  5%;
-    height: 35px;
-    border-radius: 5px;
-    border: 1px solid black;
-    padding: 12px 10px;
-    font-size: 16px;
-    background-color: #fff;
-    color:black;
-}
-#copy{
-    position: absolute;
-    margin-left:-80px;
-    margin-top: 5px;
-    height: 25px;
-    padding: 0px 20px;
-    border-radius: 5px;
-    border: 1px solid black;
-    
-}
-
-
-#generate{
-    margin-left: 5%;
-    width: 90%;
-    padding: 10px 0;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 5px;
-    font-size: 18px;
-} */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -178,5 +139,8 @@ body{
         max-height: 550px;
         width: 90%;
 
+      }
+      h1{
+          font-size: 22px;
       }
   }
